@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] Animator animator;
+
+    [Space(5)]
+
     [SerializeField] Transform candle;
     [SerializeField] float speed = 5f;
     [SerializeField] float candleRadius = 3f;
@@ -10,8 +14,17 @@ public class Player : MonoBehaviour
     private void Update()
     {
         // --- Move player ---
-        Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
+
+        if (movement.x != 0 || movement.y != 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
 
         // --- Rotate candle around player based on mouse position ---
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
