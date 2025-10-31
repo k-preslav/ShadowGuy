@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1305772498053849710
+--- !u!1 &460599891436067584
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9056406666308799103}
-  - component: {fileID: 2624689145987082286}
-  - component: {fileID: 5424823359546548286}
+  - component: {fileID: 2150560306525732841}
+  - component: {fileID: 5137824021853637899}
+  - component: {fileID: 2490666985753668065}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -18,28 +18,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9056406666308799103
+--- !u!4 &2150560306525732841
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305772498053849710}
+  m_GameObject: {fileID: 460599891436067584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.45, y: 1.69, z: 0}
-  m_LocalScale: {x: 6.0605, y: 6.0605, z: 6.0605}
+  m_LocalPosition: {x: 0.752, y: 1.184, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2624689145987082286
+--- !u!212 &5137824021853637899
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305772498053849710}
+  m_GameObject: {fileID: 460599891436067584}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,23 +81,23 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8667466294985060184, guid: fcddb0b964b781b428b7d4711e43cf86, type: 3}
-  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.64705884, a: 1}
+  m_Color: {r: 0.5176471, g: 0.5176471, b: 0.64705884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.13, y: 0.15}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5424823359546548286
+--- !u!114 &2490666985753668065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305772498053849710}
+  m_GameObject: {fileID: 460599891436067584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
@@ -110,85 +110,69 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000
+  m_AlphaCutoff: 0.613
+  m_ApplyToSortingLayers: 00000000674fd2e3
   m_ShapePath:
-  - {x: -0.035081726, y: -0.05592708, z: 0}
-  - {x: -0.035656754, y: -0.04598742, z: 0}
-  - {x: -0.04575417, y: -0.046361383, z: 0}
-  - {x: -0.04612813, y: -0.035516024, z: 0}
-  - {x: -0.05547758, y: -0.035890006, z: 0}
-  - {x: -0.055506453, y: -0.024529433, z: 0}
-  - {x: -0.045396492, y: -0.024843443, z: 0}
-  - {x: -0.04570275, y: -0.014431135, z: 0}
-  - {x: -0.035596684, y: -0.014431135, z: 0}
-  - {x: -0.035902943, y: -0.0058562886, z: 0}
-  - {x: -0.04539653, y: -0.0058562886, z: 0}
-  - {x: -0.04600901, y: 0.00547476, z: 0}
-  - {x: -0.03553964, y: 0.005761842, z: 0}
-  - {x: -0.03553964, y: 0.015617178, z: 0}
-  - {x: -0.026070759, y: 0.015617178, z: 0}
-  - {x: -0.026264034, y: 0.024699567, z: 0}
-  - {x: -0.03495993, y: 0.024699567, z: 0}
-  - {x: -0.03495993, y: 0.035521127, z: 0}
-  - {x: -0.026070759, y: 0.035521127, z: 0}
-  - {x: -0.026070759, y: 0.045183245, z: 0}
-  - {x: -0.016022166, y: 0.04537648, z: 0}
-  - {x: -0.015828928, y: 0.055811547, z: 0}
-  - {x: -0.0057803364, y: 0.055618312, z: 0}
-  - {x: -0.0051032207, y: 0.06499152, z: 0}
-  - {x: 0.00491331, y: 0.065110795, z: 0}
-  - {x: 0.005363357, y: 0.05515115, z: 0}
-  - {x: 0.015203724, y: 0.05524061, z: 0}
-  - {x: 0.015203881, y: 0.045400124, z: 0}
-  - {x: 0.025491502, y: 0.045310665, z: 0}
-  - {x: 0.025402043, y: 0.035559777, z: 0}
-  - {x: 0.035331868, y: 0.035559777, z: 0}
-  - {x: 0.035510786, y: 0.024645926, z: 0}
-  - {x: 0.025553973, y: 0.024879644, z: 0}
-  - {x: 0.025553973, y: 0.015261605, z: 0}
-  - {x: 0.035444222, y: 0.0151708685, z: 0}
-  - {x: 0.035353467, y: 0.0053713555, z: 0}
-  - {x: 0.045054138, y: 0.005490319, z: 0}
-  - {x: 0.045183174, y: -0.005174275, z: 0}
-  - {x: 0.03530319, y: -0.0050492138, z: 0}
-  - {x: 0.03530319, y: -0.014679034, z: 0}
-  - {x: 0.045433294, y: -0.014929176, z: 0}
-  - {x: 0.045433294, y: -0.02493418, z: 0}
-  - {x: 0.05503723, y: -0.024977533, z: 0}
-  - {x: 0.055301122, y: -0.035413977, z: 0}
-  - {x: 0.04514627, y: -0.035129253, z: 0}
-  - {x: 0.045172352, y: -0.04522299, z: 0}
-  - {x: 0.035359487, y: -0.04522299, z: 0}
-  - {x: 0.034959402, y: -0.055852372, z: 0}
-  - {x: 0.015750114, y: -0.05609266, z: 0}
-  - {x: 0.015820453, y: -0.07611341, z: 0}
-  - {x: -0.015461928, y: -0.07553169, z: 0}
-  - {x: -0.016209895, y: -0.05571085, z: 0}
-  m_ShapePathHash: 1187340164
+  - {x: -0.01592663, y: -0.0756011, z: 0}
+  - {x: -0.016304895, y: -0.055278674, z: 0}
+  - {x: -0.035935342, y: -0.055820018, z: 0}
+  - {x: -0.035935327, y: -0.04591313, z: 0}
+  - {x: -0.045842245, y: -0.04591313, z: 0}
+  - {x: -0.04584223, y: -0.035330743, z: 0}
+  - {x: -0.055749148, y: -0.0355559, z: 0}
+  - {x: -0.055749148, y: -0.024748355, z: 0}
+  - {x: -0.045391917, y: -0.024523199, z: 0}
+  - {x: -0.045617074, y: -0.014616281, z: 0}
+  - {x: -0.035439163, y: -0.01448077, z: 0}
+  - {x: -0.03535156, y: -0.005609989, z: 0}
+  - {x: -0.045502216, y: -0.0055915415, z: 0}
+  - {x: -0.04554221, y: 0.005826816, z: 0}
+  - {x: -0.035390362, y: 0.005723685, z: 0}
+  - {x: -0.035774946, y: 0.015466571, z: 0}
+  - {x: -0.025262907, y: 0.015466571, z: 0}
+  - {x: -0.025391102, y: 0.024440259, z: 0}
+  - {x: -0.035262167, y: 0.024440259, z: 0}
+  - {x: -0.035262167, y: 0.034952283, z: 0}
+  - {x: -0.025366947, y: 0.03522244, z: 0}
+  - {x: -0.025612801, y: 0.044564724, z: 0}
+  - {x: -0.015778854, y: 0.054644525, z: 0}
+  - {x: -0.0042239577, y: 0.065216035, z: 0}
+  - {x: 0.0043326914, y: 0.06482133, z: 0}
+  - {x: 0.024974123, y: 0.04485795, z: 0}
+  - {x: 0.035532415, y: 0.035300136, z: 0}
+  - {x: 0.037017196, y: 0.008728713, z: 0}
+  - {x: 0.047289222, y: 0.0048324317, z: 0}
+  - {x: 0.056498647, y: -0.023150012, z: 0}
+  - {x: 0.055312127, y: -0.035766795, z: 0}
+  - {x: 0.045240834, y: -0.03550175, z: 0}
+  - {x: 0.045505866, y: -0.045838073, z: 0}
+  - {x: 0.03516954, y: -0.04557304, z: 0}
+  - {x: 0.03490451, y: -0.055909365, z: 0}
+  - {x: 0.01600726, y: -0.05520144, z: 0}
+  - {x: 0.015858546, y: -0.07525802, z: 0}
+  m_ShapePathHash: 6126399
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 2624689145987082286}
+  m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
-    rid: 2803318864821878901
-  m_ShadowCastingSource: 2
+    rid: -2
+  m_ShadowCastingSource: 1
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: -0.000102665275, y: -0.0055013075, z: 0}
-      m_Extent: {x: 0.055403788, y: 0.0706121, z: 0}
+      m_Center: {x: 0.0003747493, y: -0.005192533, z: 0}
+      m_Extent: {x: 0.056123897, y: 0.07040857, z: 0}
     m_EdgeProcessing: 1
-    m_TrimEdge: 0.03
+    m_TrimEdge: 0
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0
+    m_InitialTrim: 0.02
   m_CastingOption: 1
-  m_PreviousTrimEdge: 0.03
+  m_PreviousTrimEdge: 0
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 1
-  m_PreviousShadowShape2DSource: {fileID: 2624689145987082286}
+  m_PreviousShadowShape2DSource: {fileID: 5137824021853637899}
   references:
     version: 2
     RefIds:
-    - rid: 2803318864821878901
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }
