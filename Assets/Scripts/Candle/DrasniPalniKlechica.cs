@@ -8,6 +8,8 @@ public class DrasniPalniKlechica : MonoBehaviour
         {
             var candle = collision.GetComponentInChildren<Candle>();
             candle.candleFill = 1f;
+
+            Destroy(this.gameObject);
         }
     }
 }
