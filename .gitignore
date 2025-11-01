@@ -29,6 +29,8 @@
 .vs/
 
 .plastic/
+*.changes
+.wktree
 
 # Gradle cache directory
 .gradle/
