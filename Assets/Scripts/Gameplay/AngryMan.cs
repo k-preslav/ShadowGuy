@@ -247,11 +247,12 @@ public class AngryMan : MonoBehaviour
     Transform parent = restartButton.transform;
     while (parent != null)
     {
-        if (!parent.gameObject.activeSelf)
-        {
-            Debug.Log("AngryMan: Activating parent: " + parent.name);
-            parent.gameObject.SetActive(true);
-        }
+            if (!parent.gameObject.activeSelf)
+            {
+                Debug.Log("AngryMan: Activating parent: " + parent.name);
+                parent.gameObject.SetActive(true);
+            }
+        
         parent = parent.parent;
     }
 
