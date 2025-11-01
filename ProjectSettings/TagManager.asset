@@ -45,11 +45,11 @@ TagManager:
   - name: Player
     uniqueID: 3822210919
     locked: 0
-  - name: Live World
-    uniqueID: 1687100677
-    locked: 0
   - name: Anger Man
     uniqueID: 2912153313
+    locked: 0
+  - name: Live World
+    uniqueID: 1687100677
     locked: 0
   - name: Walls
     uniqueID: 2025809295

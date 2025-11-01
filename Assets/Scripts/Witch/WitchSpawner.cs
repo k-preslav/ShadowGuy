@@ -21,7 +21,7 @@ public class WitchSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (shardManager.collected < 21) return;
+        if (shardManager.collected < 22) return;
 
         if (isRan) return;
 

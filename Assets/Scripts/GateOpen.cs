@@ -20,7 +20,7 @@ public class GateOpen : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (shardManager.collected < 21) return;
+            if (shardManager.collected < 22) return;
 
             if (isTriggered) return;
 

@@ -9,13 +9,19 @@ public class KibritManager : MonoBehaviour
     [SerializeField] Transform worldStart;
     [SerializeField] Transform worldEnd;
 
+    public int totalKibritsMax = 999;
+    int totalKibrits = 0;
+
     private void Update()
     {
         if (kibrits <= 0)
         {
-            for (int i = 0; i < 4; i++)
+            if (totalKibrits >= totalKibritsMax) return;
+
+            for (int i = 0; i < 3; i++)
             {
                 kibrits++;
+                totalKibrits++;
 
                 Vector2 position = new Vector2(
                     Random.Range(worldStart.position.x, worldEnd.position.x),

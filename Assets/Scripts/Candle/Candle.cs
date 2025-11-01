@@ -4,7 +4,7 @@ using UnityEngine.Rendering.Universal;
 public class Candle : MonoBehaviour
 {
     public float candleFill = 1f;       // 1 = full, 0 = empty
-    [SerializeField] float drainSpeed = 0.05f;    // How fast it burns
+    [SerializeField] public float drainSpeed = 0.05f;    // How fast it burns
 
     [SerializeField] Light2D candleLight;
 

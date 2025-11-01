@@ -10,10 +10,12 @@ public class Witch : MonoBehaviour
     public float catchDistance = 0.5f;
     private Vector3 velocity = Vector3.zero;
 
-    float cooldownTimer = 5f;
+    float cooldownTimer = 3f;
 
     public Animator anim;
     public AudioClip sfx;
+
+    GameObject gameOver;
 
     private void Start()
     {
@@ -29,6 +31,8 @@ public class Witch : MonoBehaviour
                 Debug.LogError("Player not found! Please ensure the player has the 'Player' tag.");
             }
         }
+
+        gameOver = GameObject.Find("GameOver");
     }
     void LateUpdate()
     {
@@ -68,6 +72,7 @@ public class Witch : MonoBehaviour
     IEnumerator Diead()
     {
         yield return new WaitForSeconds(0.11f);
+        gameOver.transform.Find("GameOverUI").gameObject.SetActive(true);
         Debug.Log("DEAD");
     }
 
