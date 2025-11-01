@@ -1,8 +1,11 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class AngryMan : MonoBehaviour
 {
+    [SerializeField] private GameObject restartButton; // Reference to restart button
+[SerializeField] private AudioSource gameOverSound;
     [Header("Target Settings")]
     public GameObject player;
 
@@ -221,10 +224,44 @@ public class AngryMan : MonoBehaviour
         }
     }
     IEnumerator EndGame()
+{
+    yield return new WaitForSecondsRealtime(0.22f); // ✅ unaffected by timeScale
+
+    Debug.Log("GAME OVER!");
+
+    if (restartButton == null)
     {
-        yield return new WaitForSeconds(0.22f);
-        Debug.Log("GAME OVER!");
+        Debug.LogWarning("AngryMan: restartButton reference is null. Assign it in the Inspector.");
+        yield break;
     }
+
+    // Make sure the canvas is visible
+    var parentCanvas = restartButton.GetComponentInParent<Canvas>();
+    if (parentCanvas != null && !parentCanvas.gameObject.activeInHierarchy)
+    {
+        Debug.Log("AngryMan: Activating parent Canvas for restart button.");
+        parentCanvas.gameObject.SetActive(true);
+    }
+
+    // Check if any parent panels are inactive
+    Transform parent = restartButton.transform;
+    while (parent != null)
+    {
+        if (!parent.gameObject.activeSelf)
+        {
+            Debug.Log("AngryMan: Activating parent: " + parent.name);
+            parent.gameObject.SetActive(true);
+        }
+        parent = parent.parent;
+    }
+
+    // Finally show the restart button
+    restartButton.SetActive(true);
+    Debug.Log("AngryMan: restart button active? " + restartButton.activeSelf);
+}
+
+      
+    
 
     private void OnDrawGizmosSelected()
     {
