@@ -8,8 +8,8 @@ public class AngryMan : MonoBehaviour
 
     [Header("Movement Settings")]
     public float speed = 5f;
-    public float chaseRadius = 20f;
-    public float stopDistance = 1f;
+    public float chaseRadius = 10f;
+    public float stopDistance = 1.5f;
 
     private Rigidbody2D rb;
     private Vector2 smoothVelocity;
