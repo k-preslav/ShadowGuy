@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 
     [Space(5)]
 
-    [SerializeField] Transform candle;
+    public Transform candle;
     [SerializeField] float speed = 5f;
     [SerializeField] float candleRadius = 3f;
     [SerializeField] float candleSmooth = 15f;

@@ -8,6 +8,8 @@ public class Candle : MonoBehaviour
 
     [SerializeField] Light2D candleLight;
 
+    [HideInInspector] public bool doDrain = true;
+
     private Vector3 initialScale;
     private Vector3 initialPos;
 
@@ -18,6 +20,11 @@ public class Candle : MonoBehaviour
 
     void Update()
     {
+        if (!doDrain)
+        {
+            return;
+        }
+
         candleFill = Mathf.Clamp01(candleFill - Time.deltaTime * drainSpeed);
         if (candleLight)
         {
