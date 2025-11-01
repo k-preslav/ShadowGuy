@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Difficulty : MonoBehaviour
 {
+    public string difficultyLevel;
+
     public float drainSpeed;
     public int limitOfKibrit;
     public float shardCooldown;
@@ -16,6 +18,7 @@ public class Difficulty : MonoBehaviour
 
     public void SetEasy()
     {
+        difficultyLevel = "Easy";
         isTriggered = false;
 
         drainSpeed = 0.05f;
@@ -25,6 +28,8 @@ public class Difficulty : MonoBehaviour
 
     public void SetMedium()
     {
+        difficultyLevel = "Medium";
+
         isTriggered = false;
         drainSpeed = 0.1f;
         limitOfKibrit = 9;
@@ -33,6 +38,8 @@ public class Difficulty : MonoBehaviour
 
     public void SetHard()
     {
+        difficultyLevel = "Hard";
+
         isTriggered = false;
         drainSpeed = 0.085f;
         limitOfKibrit = 6;

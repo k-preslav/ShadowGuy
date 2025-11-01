@@ -208,6 +208,9 @@ public class AngryMan : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
+            if (!canChase)
+                return;
+
             canMove = false;
 
             var p = collision.GetComponent<Player>();
