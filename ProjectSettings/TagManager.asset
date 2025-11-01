@@ -3,15 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - AngryMan
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Vegetation
   - Water
   - UI
-  - 
+  - Walls
   - 
   - 
   - 
@@ -46,6 +47,12 @@ TagManager:
     locked: 0
   - name: Live World
     uniqueID: 1687100677
+    locked: 0
+  - name: Anger Man
+    uniqueID: 2912153313
+    locked: 0
+  - name: Walls
+    uniqueID: 2025809295
     locked: 0
   m_RenderingLayers:
   - Default

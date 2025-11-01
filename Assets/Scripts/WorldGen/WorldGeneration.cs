@@ -11,6 +11,7 @@ public class WorldGeneration : MonoBehaviour
     [SerializeField] GameObject treePrefab;
     [SerializeField] GameObject bushPrefab;
     [SerializeField] GameObject grassPrefab;
+    [SerializeField] GameObject splashPrefab;
 
     [Space(10)]
     [Header("World Settings")]
@@ -19,6 +20,7 @@ public class WorldGeneration : MonoBehaviour
     [SerializeField] int treeCount = 100;
     [SerializeField] int grassCount = 100;
     [SerializeField] int bushCount = 0;
+    [SerializeField] int splashCount = 20;
 
     [Space(10)]
     [Header("World Parents")]
@@ -70,6 +72,11 @@ public class WorldGeneration : MonoBehaviour
             Vector2 position = GetRandomPosition();
             Instantiate(deadBushPrefab, position, Quaternion.identity, deadWorldParent);
             Instantiate(bushPrefab, position, Quaternion.identity, aliveWorldParent);
+        }
+        for (int i = 0; i < splashCount; i++)
+        {
+            Vector2 position = GetRandomPosition();
+            Instantiate(splashPrefab, position, Quaternion.identity, aliveWorldParent);
         }
     }
 

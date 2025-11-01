@@ -5,22 +5,18 @@ public class flashProgressBar : MonoBehaviour
 {
     [Header("References")]
     public Candle candle; 
-    public Slider candleSlider; 
+    public Image candleSlider; 
 
     void Start()
     {
-        candleSlider.value = candle.candleFill;
-        if (candleSlider == null)
-            candleSlider = GetComponent<Slider>();
-        if (candle == null)
-            Debug.LogWarning("CandleBarUI: Candle reference not set!");
+        candleSlider.fillAmount = candle.candleFill;
     }
 
     void Update()
     {
         if (candle != null && candleSlider != null)
         {
-            candleSlider.value = candle.candleFill;
+            candleSlider.fillAmount = candle.candleFill;
         }
     }
 }
